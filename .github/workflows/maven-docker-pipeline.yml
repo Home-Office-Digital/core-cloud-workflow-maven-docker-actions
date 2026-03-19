@@ -178,7 +178,7 @@ jobs:
   docker-build-scan:
     name: Docker Build & Scan
     needs: [maven-build]
-    uses: UKHomeOffice/core-cloud-workflow-docker-actions/.github/workflows/build-scan.yml@main
+    uses: Home-Office-Digital/core-cloud-workflow-docker-actions/.github/workflows/build-scan.yml@main
     with:
       working_directory: ${{ inputs.docker_working_directory }}
       dockerfile: ${{ inputs.dockerfile }}
@@ -190,7 +190,7 @@ jobs:
     name: Docker Publish (ECR)
     needs: [docker-build-scan]
     if: ${{ inputs.publish }}
-    uses: UKHomeOffice/core-cloud-workflow-docker-actions/.github/workflows/build-scan-push.yml@main
+    uses: Home-Office-Digital/core-cloud-workflow-docker-actions/.github/workflows/build-scan-push.yml@main
     with:
       working_directory: ${{ inputs.docker_working_directory }}
       dockerfile: ${{ inputs.dockerfile }}

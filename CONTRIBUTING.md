@@ -13,7 +13,7 @@ Use the naming convention `feature/CCL-XXXX-short-description` for all feature b
 
 1. Branch off `main`
 2. Make your changes
-3. Raise a Pull Request — all PRs require at least one review from `@UKHomeOffice/core-cloud-platform`
+3. Raise a Pull Request — all PRs require at least one review from `@Home-Office-Digital/core-cloud-platform`
 4. Ensure all pipeline stages pass on your branch before requesting review
 
 ## Testing
