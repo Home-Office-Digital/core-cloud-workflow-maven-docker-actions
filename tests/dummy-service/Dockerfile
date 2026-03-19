@@ -28,7 +28,7 @@ WORKDIR /app
 
 COPY --from=builder --chown=appuser:appgroup /build/app.jar /app/app.jar
 
-LABEL org.opencontainers.image.source="https://github.com/UKHomeOffice/core-cloud-workflow-maven-docker-actions" \
+LABEL org.opencontainers.image.source="https://github.com/Home-Office-Digital/core-cloud-workflow-maven-docker-actions" \
       org.opencontainers.image.description="CCL-6306 dummy service – Core Cloud Platform" \
       org.opencontainers.image.licenses="MIT"
 

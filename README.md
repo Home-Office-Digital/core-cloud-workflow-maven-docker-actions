@@ -115,7 +115,7 @@ on:
 
 jobs:
   pipeline:
-    uses: UKHomeOffice/core-cloud-workflow-maven-docker-actions/.github/workflows/maven-docker-pipeline.yml@main
+    uses: Home-Office-Digital/core-cloud-workflow-maven-docker-actions/.github/workflows/maven-docker-pipeline.yml@main
     with:
       image_name:        "my-service"
       java_version:      "21"
@@ -169,8 +169,8 @@ jobs:
 
 | Dependency | Purpose |
 |---|---|
-| [`core-cloud-workflow-docker-actions`](https://github.com/UKHomeOffice/core-cloud-workflow-docker-actions) (CCL-6431) | Docker setup, build, Trivy scan and ECR push |
-| [`core-cloud-workflow-sonarqube-scan`](https://github.com/UKHomeOffice/core-cloud-workflow-sonarqube-scan) `@1.1.3` | SonarQube SAST analysis |
+| [`core-cloud-workflow-docker-actions`](https://github.com/Home-Office-Digital/core-cloud-workflow-docker-actions) (CCL-6431) | Docker setup, build, Trivy scan and ECR push |
+| [`core-cloud-workflow-sonarqube-scan`](https://github.com/Home-Office-Digital/core-cloud-workflow-sonarqube-scan) `@1.1.3` | SonarQube SAST analysis |
 
 ---
 
@@ -179,7 +179,7 @@ jobs:
 Pin consumers to a release tag in production:
 
 ```yaml
-uses: UKHomeOffice/core-cloud-workflow-maven-docker-actions/.github/workflows/maven-docker-pipeline.yml@v1.0.0
+uses: Home-Office-Digital/core-cloud-workflow-maven-docker-actions/.github/workflows/maven-docker-pipeline.yml@v1.0.0
 ```
 
 Using `@main` is acceptable for development but may include breaking changes between releases.
