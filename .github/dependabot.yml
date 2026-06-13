@@ -1,0 +1,61 @@
+version: 2
+updates:
+    # Enable Github Action updates
+    - package-ecosystem: "github-actions"
+      directory: "/"
+      schedule:
+          interval: "daily"
+      commit-message:
+          prefix: "chore(GHA)"
+      labels:
+          - "dependencies"
+          - "patch"
+          - "actions"
+
+    # Enable docker dependencies updates for Dockerfiles
+    - package-ecosystem: "docker"
+      directory: "/"
+      schedule:
+          interval: "daily"
+      commit-message:
+          prefix: "chore(Docker)"
+      labels:
+          - "dependencies"
+          - "patch"
+          - "docker"
+
+    # Enable maven dependencies updates for Maven Projects
+    - package-ecosystem: "maven"
+      directory: "/"
+      schedule:
+          interval: "daily"
+      commit-message:
+          prefix: "chore(Java)"
+      labels:
+          - "dependencies"
+          - "patch"
+          - "java"
+     
+    # Enable version updates for Gradle Projects
+    - package-ecosystem: "gradle"
+      directory: "/"
+      schedule:
+          interval: "daily"
+      commit-message:
+          prefix: "chore(Java)"
+      labels:
+          - "dependencies"
+          - "patch"
+          - "java"
+
+    # Enable PIP updates for Python Projects
+    - package-ecosystem: "pip"
+      directory: "/"
+      schedule:
+          interval: "daily"
+      commit-message:
+          prefix: "chore(Python)"
+      labels:
+          - "dependencies"
+          - "patch"
+          - "python"
