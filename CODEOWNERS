@@ -2,6 +2,5 @@
 # CODEOWNERS
 # All changes to this repo require review from the Core Cloud Platform team.
 # ==============================================================================
-# Add all engineers from the Sauron team to be owners of this repo
 # @org/team-name
-* @Home-Office-Digital/core-cloud-sauron
+* @Home-Office-Digital/core-cloud-developer-tooling
